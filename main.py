@@ -21,9 +21,9 @@ def check_title(songs,prompt):
 def compare_album(input, correct_song):
   if input.album > correct_song.album:
     if (input.album - correct_song.album <= 1):
-      return "⬇+"
+      return "↓+"
     else:
-      return "⬇"
+      return "↓"
       
   elif input.album < correct_song.album:
     if (correct_song.album - input.album <= 1):
@@ -36,9 +36,9 @@ def compare_album(input, correct_song):
 def compare_pos(input, correct_song):
   if input.pos > correct_song.pos:
     if (input.pos - correct_song.pos <= 2):
-      return "⬇+"
+      return "↓+"
     else:
-      return "⬇"
+      return "↓"
       
   elif input.pos < correct_song.pos:
     if (correct_song.pos - input.pos <= 2):
@@ -52,9 +52,9 @@ def compare_pos(input, correct_song):
 def compare_length(input, correct_song):
   if input.length > correct_song.length:
     if (input.length- correct_song.length <= 30):
-      return "⬇+"
+      return "↓+"
     else:
-      return "⬇"
+      return "↓"
       
   elif input.length < correct_song.length:
     if (correct_song.length - input.length <= 30):
@@ -71,7 +71,7 @@ def compare_feat(input, correct_song):
     return " x"
 
 def rules():
-  print("GENERAL RULES:\n-You get 8 guesses to guess a mystery song off of all Kendrick studio albums besides the Black Panther album. (Albums: Section 80, GKMC, TPAB, Untitled Unmastered, DAMN., MMATBS\n--Album symbols: There are arrows hinting lower(⬇) and higher(↑) if there is a plus(+) next to the arrow, it means you are within 1 album.If you have the correct album, there will be a check(✓).\n--Track number symbols: There are arrows hinting lower(⬇) and higher(↑) if there is a plus(+) next to the arrow, it means you are within 2 tracks.If you have the correct track number, there will be a check(✓).\n--Track length symbols: There are arrows hinting lower(⬇) and higher(↑) if there is a plus(+) next to the arrow, it means you are within 30 seconds.If you have the track length, there will be a check(✓).\n--Features:There are only two symbols, check(✓), meaning you are ABSOLUTELY correct, and (x) meaning you are incorrect.(PARTIALLY CORRECT FEATURES WILL BE MARKED AS INCORRECT)")
+  print("GENERAL RULES:\n-You get 8 guesses to guess a mystery song off of all Kendrick studio albums besides the Black Panther album. (Albums: Section 80, GKMC, TPAB, Untitled Unmastered, DAMN., MMATBS\n--Album symbols: There are arrows hinting lower(↓) and higher(↑) if there is a plus(+) next to the arrow, it means you are within 1 album.If you have the correct album, there will be a check(✓).\n--Track number symbols: There are arrows hinting lower(↓) and higher(↑) if there is a plus(+) next to the arrow, it means you are within 2 tracks.If you have the correct track number, there will be a check(✓).\n--Track length symbols: There are arrows hinting lower(↓) and higher(↑) if there is a plus(+) next to the arrow, it means you are within 30 seconds.If you have the track length, there will be a check(✓).\n--Features:There are only two symbols, check(✓), meaning you are ABSOLUTELY correct, and (x) meaning you are incorrect.(PARTIALLY CORRECT FEATURES WILL BE MARKED AS INCORRECT)")
   print("FORMATTING RULES:\n-Capitalization should not matter, but in case, type in all lowercase\n- Make sure you do not include any characters in your song, such as commas, periods, etc.\nFor example = 'M.A.A.D City' should be spelled 'Maad city'.\n-Any songs, such as 'sherane aka mr splinters daughter' have been shortened to sherane. This includes section 80 songs that have extra text in parantheses such as 'keishas song (her pain)' are just typed as keishas song, etc.\nText shaun if you have questions.")
   
   
